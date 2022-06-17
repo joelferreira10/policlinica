@@ -1,0 +1,421 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul,li{
+    list-style: none;
+}
+/*-----------animaciones--------------*/
+@keyframes imagen{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@keyframes contenido-perfil1{
+    0%{top:0;}
+    25%{top:-100px}
+    50%{top:-220px}
+    75%{top:-100px}
+    100%{top:0}
+}
+@keyframes contenido-perfil-responsive{
+    0%{top:0;}
+    25%{top:-65px;}
+    50%{top:-130px}
+    75%{top:-65px}
+    100%{top:0}
+}
+
+@keyframes portada-presentacion{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes btnPersonal {
+    0%{transform: scale(1);}
+    25%{transform: scale(1.1);}
+    50%{transform: scale(1);}
+    75%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+/*fin de animaciones*/
+
+/*WhatsApp*/
+.wsp{
+    color: #075e54;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 60px;
+    border:none;
+    background-color: transparent;
+
+}
+.wsp:hover{
+    transform: scale(1.1);
+}
+/*Fin WhatsApp*/
+/*inicio menu flotante*/
+
+.nav-munu-flotatnte{
+    position: fixed;
+    width: 6%;
+    height: 100%;
+}
+.nav-munu-flotatnte .caja-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding-right: 10px;
+    width: 45px;
+    height: 55px;
+    background-color: rgb(192, 177, 177);
+    font-size: 15px;
+    border-top-right-radius: 15px ;
+}
+.nav-munu-flotatnte .caja-nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.nav-munu-flotatnte .caja-nav i{
+    font-size: 25px;
+}
+.nav-munu-flotatnte .caja-nav:hover{
+    transition: all 0.5s ease; 
+    width: 50px;
+}
+/*fin menu flotante*/
+
+/*barra de navegacion*/
+.super-nav{
+    background-color: #000;
+    color: #fff;
+
+}
+
+.super-nav form {
+    margin-bottom: 10px;
+    height: 100%;
+}
+.horarios{
+    font-size: 12px ;
+}
+.caja-colapso{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 5px;
+    border-radius: 30px;
+    border: 1px solid rgb(12, 12, 12);
+}
+.caja-colapso .redes{
+    color: black !important;
+}
+.navegacion{
+    background: rgba(17, 77, 117, 1);
+   
+}
+.navegacion a i{
+    font-size: 20px;
+    border-radius: 50%;
+}
+.navegacion a{
+    color: white !important;
+}
+.nombre-nav{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 18px;
+}
+.titulo-hospital{
+    text-shadow: 0 0 2px black;
+    margin-left: 5px;
+    
+    border-radius: none;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.menu-nav li a ,.hab{
+    font-family: serif !important;
+    border-bottom: 2px solid transparent;
+    color:white !important;
+    
+}
+.menu-nav li a:hover , .hab:hover{
+    border-bottom: 2px solid black;
+}
+/*fin barra navegacion*/
+/*portada presentacion*/
+.contenedor-portada{
+    background-image: url('../img/imgen-principal.jpeg');
+    background-attachment: fixed;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.portada-presentacion{
+     background: linear-gradient(45deg, rgba(129, 136, 139, 0.7), rgba(143, 148, 150, 0.7), rgba(143, 146, 146, 0.7),rgba(95, 133, 168, 0.7)); 
+    height: 600px;
+    animation: gradient 15s ease infinite;
+    animation: portada-presentacion 3s;
+}
+
+/* .img-perfil{
+    border-radius: 50%;
+    animation:imagen 6s;
+} */
+.img-perfil img{
+    margin-top: 25%;
+}
+
+
+.contenido-perfil1{
+    height: 80px;
+    padding: 2px 0;
+    width: 320px;
+    overflow: hidden;
+    width: auto;
+
+}
+.contenido-perfil1 p{
+    position: relative;
+    animation:contenido-perfil1 5s infinite; 
+    animation-delay: 2s;
+    font-family:'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: 500;
+}
+/*Barra de informacion rapida*/
+.guia{
+    font-family: serif;
+    border-right: 1px solid black;
+}
+.guia .row div a:hover{
+    padding-left: 5px;
+}
+
+
+/*fin barra informacion rapida*/
+
+/*Sobre mi*/
+.sobre-mi{
+    
+    background-color: #fcfcfd;
+    width: 90%;
+    color: #000;
+    font-family:sans-serif;
+}
+/*fin sobre mi*/
+.sobre-mi h1{
+    border-bottom: 1px solid black;
+}
+.sobre-mi p{
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*Habilidades*/
+.servicios{
+    background-color: #004993;
+    border: 1px solid white;
+    
+}
+.servicios:hover{
+    background-color: #0770da;
+    
+}
+.subservicio{
+    background-image: url('../img/medicine.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+   
+    overflow:hidden;
+}
+.habilidades{
+   
+    background-color: white;
+    border-radius: 15px;
+}
+
+.habilidades h1{
+    font-weight: 600;
+}
+
+/* .habilidades i{
+    font-size: 60px;
+} */
+
+.habilidades .parrafo{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Josefin Slab', serif;
+}
+/* .habilidades .parrafo i{
+    font-size: 35px;
+} */
+.titulo-interno{
+    color:#7510F7 !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*fin habilidades*/
+
+/*Personal medico*/
+.proyectos{
+    background-image: url('../img/dot-grid.png');
+    background-repeat: repeat;
+    box-shadow: 0 0 5px black inset;
+}
+.card img{
+    width: 100%;
+    height: 400px;
+    
+}
+
+.card-text i{
+    font-size: 40px;
+}
+.tituloPersonal{
+    font-family: serif;
+    font-size: 25px;
+}
+.btn-personal{
+    animation: btnPersonal 4s infinite;
+}
+/*formulario de contacto*/
+.form-contacto{
+    /* height: 600px; */
+    transition: all 2s;
+    background-color: rgb(25, 137, 189);
+    background-image: url('../img/consultas3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form{
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+}
+.form .btn-form{
+    width: 100%;
+}
+.form .btn-form:hover{
+    background-color: rgb(255, 0, 98);
+}
+
+/*---footer---*/
+.footer{
+    background-color: rgba(17, 77, 117, 1);
+    font-size: 20px;
+}
+
+/*mediaqueri*/
+@media(max-width:991px) {
+    .card-skill{
+        border-bottom: 1px solid black;
+        box-shadow: 0 0 10px black;
+    }
+    .sobre-mi p{
+        font-size: 19px;
+        
+    }
+}
+
+@media(max-width:320px) {
+    .card img{
+        height: 250px !important;
+    }
+}
+@media(max-width:767px) {
+    .card{
+        width: 30rem !important;
+        height: 500px !important;
+    }
+    .card img{
+        height: 300px;
+    }
+    .portada-presentacion{
+        background-color:transparent;
+        height: 100%;
+    }
+    .img-tafi img{
+        width: 100%;
+
+    }
+    .guia{
+        border-right: none;
+        text-align: left;
+    }
+    .guia .row div{
+        border-bottom: 1px solid black;
+    }
+    .tituloPersonal{
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width:519px){
+    .form{
+        width: 100%;
+    }
+ 
+}
+@media(max-width:442px){
+    .contenido-perfil1 p{
+        font-size: 33px;
+        animation: contenido-perfil-responsive 5s infinite;
+        animation-delay: 2s;
+    }
+    .contenido-perfil1{
+        width: 100%;
+        height: 70px;
+    }
+    .titulo-portada{
+        font-size: 50px;
+    }
+    .contenedor-portada,.portada-presentacion{
+        background-size:100% 82%;
+        height: 250px;
+    }
+    .titulo-hospital{
+        font-size: 15px;
+    }
+    .nombre-nav{
+        font-size: 15px !important;
+    }
+    .sobre-mi p{
+        font-size: 17px;
+    }
+    
+    
+}
+
+@media(max-width:442px){
+    .contenedor-portada{
+        height: 250px;
+    }
+}

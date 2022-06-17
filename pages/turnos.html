@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/turnos.css">
+    <link rel="stylesheet" href="../css-bootstrap/bootstrap.min.css">
+    <!--Iconos-->
+    <link rel="shortcut icon" href="../img/icono-hospital.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/2fd7ae33ae.js" crossorigin="anonymous"></script>
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <!--font-family: 'Dancing Script', cursive;-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--font-family: 'Roboto', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!--font-family: 'Josefin Slab', serif;-->
+    <title>Turnos</title>
+</head>
+<body>
+    
+    <nav class="navbar bg-gradient bg-danger">
+        <div class="container">
+          <a class="navbar-brand text-white" href="../index.html">
+            <span class="fs-5 ">
+                <img src="../img/cruz.png" width="50" class="rounded-circle fs-3" ;" alt="">Policlinica
+            </span>
+                
+            <span class=" fs-3 ">Mercedes serrano</span>
+          </a>
+        </div>
+      </nav>
+      <h1 class="h1 text-center border-bottom border-dark">Turnos</h1>
+
+      <div class="container " id="turnos">
+        <div class="row d-flex justify-content-between flex-wrap">
+            <div class="col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12 mb-2 ">
+                <div class="card turnos" style="width: 15rem;">
+                    <img src="../img/doctor-turno.jpg" class="card-img-top img-carg" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center">
+                      <h5 class="card-title fs-3">Juan Fernandez</h5>
+                      <p class="card-text fs-4">Clinico</p>
+                      <a href="#" class="btn btn-danger agregar-turno bg-gradient w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicitar Turno >>></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12 mb-2">
+                <div class="card turnos" style="width: 14rem;">
+                    <img src="../img/doctora-turno.jpg" class="card-img-top img-carg" alt="...">
+                    <div class="card-body card-title d-flex flex-column align-items-center">
+                      <h5 class=" fs-3">Ana Cabrera</h5>
+                      <p class="card-text fs-4">Pediatra</p>
+                      <a href="#" class="btn btn-danger agregar-turno bg-gradient w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicitar Turno >>></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12 mb-2">
+                <div class="card turnos" style="width: 14rem;">
+                    <img src="../img/doctora-turno.jpg" class="card-img-top img-carg" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center">
+                      <h5 class="card-title fs-3">Susana jonich</h5>
+                      <p class="card-text fs-4">Cardiologa</p>
+                      <a href="#" class="btn btn-danger agregar-turno bg-gradient w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicitar Turno >>></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12 mb-2">
+                <div class="card turnos" style="width: 14rem;">
+                    <img src="../img/doctor-turno.jpg" class="card-img-top img-carg" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center">
+                      <h5 class="card-title fs-3">Joel Ferreira</h5>
+                      <p class="card-text fs-4">Psicologo</p>
+                      <a href="#" class="btn btn-danger agregar-turno bg-gradient w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicitar Turno >>></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header " id="modal-turno">
+            <div class="d-flex">
+                <div>
+                    <img src="../img/doctor-turno.jpg" width="70" alt="">
+                </div>
+                <div class="ml-5">
+                    <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                    <p></p>
+                </div>
+            </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="" class="row g-3 needs-validation" novalidate>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="DNI" required>
+                    <label for="floatingInput">Documento</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Nombre" required>
+                    <label for="floatingPassword">Nombre</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Apellido" required>
+                    <label for="floatingPassword">Apellido</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingPassword" placeholder="Fecha" required>
+                    <label for="floatingPassword">Fecha de turno</label>
+                  </div>
+                  <h4>Horarios Disponibles</h4>
+                  <div class="form-floating mb-3 d-flex justify-content-between">
+                    
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          16:00
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          16:30
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          17:00
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                         19:00
+                        </label>
+                      </div>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingPassword" placeholder="correo@cooreo.com">
+                    <label for="floatingPassword">Correo</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Sintoma</label>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100 mb-2 btn-turno" id="alerta-turno" type="submit" data-bs-dismiss="modal">Solicitar Turno</button>
+                    <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cancelar</button>
+                  </div>
+                  <div class="modal-footer">
+                    
+                  </div>
+            </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+      
+  <script script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script> 
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/apps.js"></script>
+</body>
+</html>
